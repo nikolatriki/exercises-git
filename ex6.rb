@@ -30,3 +30,4 @@ e = "a string with right side."
 # Prints the two variables using concatenation. Using the + symbol on string joins them together.
 puts w + e
 puts "hi" # This line added for testing
+# Test
