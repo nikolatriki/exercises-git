@@ -1,9 +1,8 @@
 # Here's some classes, remember type it exactly.
-# Using super as in the book pg. 142 and not getting the desired result!
 
 class Shape
     def welcome
-        puts "Hi, I am Shape and I am the parent."
+        "Hi, I am Shape and I am the parent."
     end
 end
 
@@ -22,7 +21,7 @@ class Rectangle < Shape
     end
 
     def welcome
-        puts "Hi. I am Rectangle and my parent says:" + super
+        "Hi. I am Rectangle and my parent says:" + super
     end
 end
 
@@ -44,24 +43,16 @@ class Triangle < Shape
     end
 
     def welcome
-        puts "Hi. I am Triangle, and my parent says:" + super
+        "Hi. I am Triangle, and my parent says:" + super
     end
 end
 
-class Square < Shape
+class Square < Rectangle
     def initialize(side_a)
-        @side_a = side_a
+        super @width = side_a, @lenght = side_a
     end
-
-    def area
-        @side_a * @side_a
-    end
-
-    def perimetar
-        @side_a * 4
-    end
-
+        
     def welcome
-        puts "Hi. I am Square, and my parent says:" + super
+        "Hi. I am Square, and my parent says:" + super
     end
 end
