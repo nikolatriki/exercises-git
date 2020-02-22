@@ -23,17 +23,16 @@ def rev_meth(reverse_string_arg)
 end
  
 def bark(string)
-    string.reverse
+    puts string.reverse
 end
 
-bark("hellou")
 
 def more(u_arg, chn_arg)
     puts "u_arg: #{u_arg.upcase}, chn_arg: #{chn_arg.chop.next}"
 end
 
 rev_meth("hello")
-
+bark("hellou")
 more("hello", "hello")
 
 # Sledniot nacin vo irb dava tocen rezultat, a na terminal ne!
@@ -42,5 +41,5 @@ def rev(arg1)
     arg1.next
 end
 
-rev("hello")
+puts rev("hello")
 
