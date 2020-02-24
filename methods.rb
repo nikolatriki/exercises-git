@@ -35,8 +35,6 @@ rev_meth("hello")
 bark("hellou")
 more("hello", "hello")
 
-# Sledniot nacin vo irb dava tocen rezultat, a na terminal ne!
-# ???
 def rev(arg1)
     arg1.next
 end
